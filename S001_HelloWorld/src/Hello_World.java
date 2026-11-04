@@ -3,6 +3,6 @@ public class Hello_World {
     private static String Apellidos = "De Los Santos Rodriguez";
     static void main() {
         // Jose antonio de los santos
-        System.out.println(Nombre + " " + Apellidos);
+        System.out.println(Nombre.concat(" " + Apellidos));
     }
 }
