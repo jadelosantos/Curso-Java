@@ -9,10 +9,11 @@ public class s003_IntroDATA {
     private static int nota;
     private static Scanner sc = new Scanner(System.in);
     private static final double alturaMedia = 1.76;
+
     static void main() {
         boolean endProgram = false;
         int num;
-        while(!endProgram){
+        while (!endProgram) {
             pedirDatos();
             mostrarDatos();
             System.out.println("1.Salir,2.Seguir:");
@@ -23,30 +24,31 @@ public class s003_IntroDATA {
         sc.close();
     }
 
-    private static void pedirDatos(){
+    private static void pedirDatos() {
         boolean terminado = false;
-            while(!terminado) {
-                try {
-                    System.out.println("Introduce tu nombre:");
-                    nombre = sc.nextLine();
-                    System.out.println("Introduce tu edad:");
-                    edad = sc.nextInt();
-                    sc.nextLine();
-                    System.out.println("Introduce tu altura:");
-                    altura = sc.nextDouble();
-                    sc.nextLine();
-                    System.out.println("Introduce la Asignatura:");
-                    asignatura = sc.nextLine();
-                    System.out.println("Introduce tu nota:");
-                    nota = sc.nextInt();
-                    terminado = true;
-                } catch (InputMismatchException e) {
-                    System.err.println("Introduce un numero valido");
-                    sc.nextLine();
-                }
+        while (!terminado) {
+            try {
+                System.out.println("Introduce tu nombre:");
+                nombre = sc.nextLine();
+                System.out.println("Introduce tu edad:");
+                edad = sc.nextInt();
+                sc.nextLine();
+                System.out.println("Introduce tu altura:");
+                altura = sc.nextDouble();
+                sc.nextLine();
+                System.out.println("Introduce la Asignatura:");
+                asignatura = sc.nextLine();
+                System.out.println("Introduce tu nota:");
+                nota = sc.nextInt();
+                terminado = true;
+            } catch (InputMismatchException e) {
+                System.err.println("Introduce un numero valido");
+                sc.nextLine();
             }
+        }
     }
-    private static void mostrarDatos(){
+
+    private static void mostrarDatos() {
         System.out.println("Nombre: " + nombre);
         System.out.println("Edad: " + edad);
         System.out.println(edad >= 18 ? "Es mayor de edad" : "Es menor de edad");

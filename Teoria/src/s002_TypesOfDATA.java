@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class s002_TypesOfDATA {
     private static Scanner sc = new Scanner(System.in);
+
     public static void main(String[] args) {
         // byte
         // Almacena números enteros pequeños
@@ -80,9 +81,9 @@ public class s002_TypesOfDATA {
         nombre = sc.nextLine();
         System.out.println("Introduce tu nota: ");
         int notasc = sc.nextInt();
-        if(notasc >= 5){
+        if (notasc >= 5) {
             System.out.println("El alumno " + nombre + " ha aprobado");
-        }else{
+        } else {
             System.out.println("El alumno " + nombre + " ha suspendido");
         }
         // Ejemplo booleano guardando expresion condicional
@@ -90,7 +91,7 @@ public class s002_TypesOfDATA {
         //Ejemplo equals
         String nombreAlumno1 = "Miguel";
         String nombreAlumno2 = "Rafael";
-        if(nombreAlumno1.equals(nombreAlumno2)){
+        if (nombreAlumno1.equals(nombreAlumno2)) {
             System.out.println("iguales");
         }
     }
