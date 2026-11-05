@@ -8,7 +8,7 @@ public class s003_IntroDATA {
     private static String asignatura;
     private static int nota;
     private static Scanner sc = new Scanner(System.in);
-    private static double edadMedia = 1.76;
+    private static final double alturaMedia = 1.76;
     static void main() {
         boolean endProgram = false;
         int num;
@@ -20,6 +20,7 @@ public class s003_IntroDATA {
             sc.nextLine();
             endProgram = (num == 1);
         }
+        sc.close();
     }
 
     private static void pedirDatos(){
@@ -50,7 +51,7 @@ public class s003_IntroDATA {
         System.out.println("Edad: " + edad);
         System.out.println(edad >= 18 ? "Es mayor de edad" : "Es menor de edad");
         System.out.println("altura: " + altura);
-        System.out.println(altura > edadMedia ? "Tienes una altura superior a la media" : "Tienes una altura menor a la media");
+        System.out.println(altura > alturaMedia ? "Tienes una altura superior a la media" : "Tienes una altura menor a la media");
         System.out.println("asignatura: " + asignatura);
         System.out.println("nota: " + nota);
         System.out.println(nota >= 5 ? "Aprobado" : "Suspenso");
