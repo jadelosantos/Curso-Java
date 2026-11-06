@@ -31,9 +31,9 @@ public class Ejemplo_Array {
                 {9,9,10,7,7}
         };
 
-        for(int i = 0;i<notas.length;i++){
-            for(int j = 0;j<notas[i].length;j++){
-                System.out.print(notas[i][j] + "\t");
+        for (int[] nota : notas) {
+            for (int i : nota) {
+                System.out.print(i + "\t");
             }
             System.out.println();
         }
