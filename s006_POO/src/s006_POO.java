@@ -31,8 +31,8 @@ public class s006_POO {
         coche.velocidad = sc.nextInt();
         coche.mostrarDatos();
         coche.acelerar();
-        System.out.println("Acelerando: " + coche.velocidad + " km/h");
+        coche.mostrarDatos();
         coche.frenar();
-        System.out.println("Frenando..." + coche.velocidad + " km/h");
+        coche.mostrarDatos();
     }
 }
