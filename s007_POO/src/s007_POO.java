@@ -56,27 +56,31 @@ public class s007_POO {
         System.out.println("2.Retirar");
         System.out.println("3.Consultar Saldo");
         System.out.println("4.Salir");
-        num = sc.nextInt();
-        switch (num){
-            case 1:
-                System.out.println(cuentab.titular);
-                System.out.println("Introduce la cantidad a ingresar:");
-                double cantidadIngreso = sc.nextDouble();
-                cuentab.ingresar(cantidadIngreso);
-                break;
-            case 2:
-                System.out.println(cuentab.titular);
-                System.out.println("Introduce la cantidad a Retirar: ");
-                double cantidadRetiro = sc.nextDouble();
-                cuentab.retirar(cantidadRetiro);
-                break;
-            case 3:
-                System.out.println(cuentab.titular);
-                cuentab.consultarSaldo();
-                break;
-            case 4:
-                endProgram = true;
-                break;
+        try {
+            num = sc.nextInt();
+            switch (num){
+                case 1:
+                    System.out.println(cuentab.titular);
+                    System.out.println("Introduce la cantidad a ingresar:");
+                    double cantidadIngreso = sc.nextDouble();
+                    cuentab.ingresar(cantidadIngreso);
+                    break;
+                case 2:
+                    System.out.println(cuentab.titular);
+                    System.out.println("Introduce la cantidad a Retirar: ");
+                    double cantidadRetiro = sc.nextDouble();
+                    cuentab.retirar(cantidadRetiro);
+                    break;
+                case 3:
+                    System.out.println(cuentab.titular);
+                    cuentab.consultarSaldo();
+                    break;
+                case 4:
+                    endProgram = true;
+                    break;
+            }
+        } catch (InputMismatchException e) {
+            System.err.println("Introduce un formato de numero valido");
         }
         return endProgram;
     }
