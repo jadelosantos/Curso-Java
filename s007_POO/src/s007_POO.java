@@ -1,3 +1,4 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 class CuentaBancaria{
@@ -5,23 +6,31 @@ class CuentaBancaria{
     double saldo;
 
     void ingresar(double cantidad){
-        if(cantidad > 0){
-            saldo += cantidad;
-        }else{
-            System.err.println("Introduce una cantidad positiva");
+        try{
+            if(cantidad > 0){
+                saldo += cantidad;
+            }else{
+                System.err.println("Introduce una cantidad positiva");
+            }
+        }catch (InputMismatchException e){
+            System.err.println("Introduce un formato de numero valido");
         }
     }
 
     void retirar(double cantidad){
-        if(cantidad > 0){
-            saldo -= cantidad;
-        }else{
-            System.err.println("Introduce una cantidad positiva");
+        try {
+            if(cantidad > 0){
+                saldo -= cantidad;
+            }else{
+                System.err.println("Introduce una cantidad positiva");
+            }
+        } catch (InputMismatchException e) {
+            System.err.println("Introduce un formato de numero valido");
         }
     }
 
     void consultarSaldo(){
-        System.out.println("Saldo actual: " + saldo);
+        System.out.println("Saldo actual: " + saldo + " €");
     }
 
 
@@ -50,16 +59,19 @@ public class s007_POO {
         num = sc.nextInt();
         switch (num){
             case 1:
+                System.out.println(cuentab.titular);
                 System.out.println("Introduce la cantidad a ingresar:");
                 double cantidadIngreso = sc.nextDouble();
                 cuentab.ingresar(cantidadIngreso);
                 break;
             case 2:
+                System.out.println(cuentab.titular);
                 System.out.println("Introduce la cantidad a Retirar: ");
                 double cantidadRetiro = sc.nextDouble();
                 cuentab.retirar(cantidadRetiro);
                 break;
             case 3:
+                System.out.println(cuentab.titular);
                 cuentab.consultarSaldo();
                 break;
             case 4:
