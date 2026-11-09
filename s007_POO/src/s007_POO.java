@@ -81,6 +81,7 @@ public class s007_POO {
             }
         } catch (InputMismatchException e) {
             System.err.println("Introduce un formato de numero valido");
+            sc.nextLine();
         }
         return endProgram;
     }
