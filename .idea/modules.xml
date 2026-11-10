@@ -10,6 +10,8 @@
       <module fileurl="file://$PROJECT_DIR$/s006_POO/s006_POO.iml" filepath="$PROJECT_DIR$/s006_POO/s006_POO.iml" />
       <module fileurl="file://$PROJECT_DIR$/s007_POO/s007_POO.iml" filepath="$PROJECT_DIR$/s007_POO/s007_POO.iml" />
       <module fileurl="file://$PROJECT_DIR$/s008_POO/s008_POO.iml" filepath="$PROJECT_DIR$/s008_POO/s008_POO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/s009_Biblioteca/s009_Biblioteca.iml" filepath="$PROJECT_DIR$/s009_Biblioteca/s009_Biblioteca.iml" />
+      <module fileurl="file://$PROJECT_DIR$/s011_HorasEXTRAS/s011_HorasEXTRAS.iml" filepath="$PROJECT_DIR$/s011_HorasEXTRAS/s011_HorasEXTRAS.iml" />
     </modules>
   </component>
 </project>
