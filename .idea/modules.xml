@@ -13,6 +13,7 @@
       <module fileurl="file://$PROJECT_DIR$/s009_Biblioteca/s009_Biblioteca.iml" filepath="$PROJECT_DIR$/s009_Biblioteca/s009_Biblioteca.iml" />
       <module fileurl="file://$PROJECT_DIR$/s011_HorasEXTRAS/s011_HorasEXTRAS.iml" filepath="$PROJECT_DIR$/s011_HorasEXTRAS/s011_HorasEXTRAS.iml" />
       <module fileurl="file://$PROJECT_DIR$/s013_Marvel/s013_Marvel.iml" filepath="$PROJECT_DIR$/s013_Marvel/s013_Marvel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/s015_MatematicaRectanculos/s015_MatematicaRectanculos.iml" filepath="$PROJECT_DIR$/s015_MatematicaRectanculos/s015_MatematicaRectanculos.iml" />
     </modules>
   </component>
 </project>

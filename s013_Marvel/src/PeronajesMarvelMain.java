@@ -1,4 +1,4 @@
-public class Main {
+public class PeronajesMarvelMain {
 
     public static void main(String[] args) {
 
