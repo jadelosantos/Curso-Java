@@ -10,5 +10,6 @@ public class s014_POO_main {
         System.out.println("Introduce tu Edad: ");
         int edad = sc.nextInt();
         s014_POO persona = new s014_POO(nombre,edad);
+        persona.saludar();
     }
 }
