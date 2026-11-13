@@ -18,6 +18,7 @@
       <module fileurl="file://$PROJECT_DIR$/s015_MatematicaRectanculos/s015_MatematicaRectanculos.iml" filepath="$PROJECT_DIR$/s015_MatematicaRectanculos/s015_MatematicaRectanculos.iml" />
       <module fileurl="file://$PROJECT_DIR$/s016_ColeccionesPILAS/s016_ColeccionesPILAS.iml" filepath="$PROJECT_DIR$/s016_ColeccionesPILAS/s016_ColeccionesPILAS.iml" />
       <module fileurl="file://$PROJECT_DIR$/s017_Encapsulacion/s017_Encapsulacion.iml" filepath="$PROJECT_DIR$/s017_Encapsulacion/s017_Encapsulacion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/s018_Herencia/s018_Herencia.iml" filepath="$PROJECT_DIR$/s018_Herencia/s018_Herencia.iml" />
     </modules>
   </component>
 </project>
