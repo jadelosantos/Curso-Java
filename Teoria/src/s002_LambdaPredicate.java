@@ -1,4 +1,4 @@
-﻿import java.util.function.Predicate;
+import java.util.function.Predicate;
 
 public class s002_LambdaPredicate {
 
