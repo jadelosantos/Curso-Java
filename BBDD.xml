@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<catalogoMusica>
+
+    <artista id="1">
+        <nombre>Linkin Park</nombre>
+        <pais>Estados Unidos</pais>
+        <genero>Rock alternativao</genero>
+
+        <album>
+            <titulo>Hybrid theory</titulo>
+            <anio>2000</anio>
+
+            <canciones>
+                <cancion>
+                    <titulo>Papercut</titulo>
+                    <duracion>3:04</duracion>
+                </cancion>
+
+                <cancion>
+                    <titulo>Forgotten</titulo>
+                    <duracion>3:14</duracion>
+                </cancion>
+            </canciones>
+        </album>
+    </artista>
+
+    <artista id="2">
+        <nombre>Akira yamaoka</nombre>
+        <pais>Japon</pais>
+        <genero>Ambient Oscuro</genero>
+
+        <album>
+            <titulo>Silent Hill 2 OST</titulo>
+            <anio>2001</anio>
+
+            <canciones>
+                <cancion>
+                    <titulo>True</titulo>
+                    <duracion>3:06</duracion>
+                </cancion>
+
+                <cancion>
+                    <titulo>White Noiz</titulo>
+                    <duracion>1:23</duracion>
+                </cancion>
+            </canciones>
+        </album>
+    </artista>
+
+</catalogoMusica>
