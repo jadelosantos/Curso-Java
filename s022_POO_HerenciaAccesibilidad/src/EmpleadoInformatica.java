@@ -50,7 +50,7 @@ public class EmpleadoInformatica extends Empleado {
 		final StringBuilder sb = new StringBuilder();
 		sb.append("Nombre: ").append(getNombre()).append('\n');
 		sb.append("DNI: ").append(getDni()).append('\n');
-		sb.append("Salario: ").append(getSalario()).append('\n');
+		sb.append("Salario: ").append(getSalario()).append(" €").append('\n');
 		sb.append("Nombre Empresa: ").append(getNombreEmpresa()).append('\n');
 		sb.append("Especialidad: ").append(especialidad).append('\n');
 		sb.append("Lenguaje de programación: ").append(lenguajeProgramacion);

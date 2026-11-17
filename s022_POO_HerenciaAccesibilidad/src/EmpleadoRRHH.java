@@ -32,7 +32,7 @@ public class EmpleadoRRHH extends Empleado {
 		final StringBuilder sb = new StringBuilder();
 		sb.append("Nombre: ").append(getNombre()).append('\n');
 		sb.append("DNI: ").append(getDni()).append('\n');
-		sb.append("Salario: ").append(getSalario()).append('\n');
+		sb.append("Salario: ").append(getSalario()).append(" €").append('\n');
 		sb.append("Nombre Empresa: ").append(getNombreEmpresa()).append('\n');
 		sb.append("Contrataciones: ").append(contrataciones);
 		return sb.toString();

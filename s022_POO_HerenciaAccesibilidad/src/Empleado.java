@@ -48,7 +48,7 @@ public class Empleado {
         final StringBuilder sb = new StringBuilder();
         sb.append("Nombre: ").append(nombre).append('\n');
         sb.append("DNI: ").append(dni).append('\n');
-        sb.append("Salario: ").append(salario);
+        sb.append("Salario: ").append(salario).append(" €").append('\n');
         sb.append("Nombre Empresa: ").append(nombreEmpresa).append('\n');
         return sb.toString();
     }
