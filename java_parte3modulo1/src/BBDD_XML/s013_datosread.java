@@ -6,9 +6,9 @@ import java.io.*;
 public class s013_datosread {
     static void main() {
         JFileChooser selector = new JFileChooser();
-        if (selector.showOpenDialog(null) == JFileChooser.APPROVE_OPTION) {
+        boolean archivoSeleccionado = selector.showOpenDialog(null) == JFileChooser.APPROVE_OPTION;
+        if (archivoSeleccionado) {
             File archivo = selector.getSelectedFile();
-
             try (BufferedReader br = new BufferedReader(new FileReader(archivo))) {
                 String linea;
                 while ((linea = br.readLine()) != null) {
