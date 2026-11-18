@@ -1,4 +1,4 @@
-public class Main {
+public class MainCalculadora {
     static void main() {
         Calculadora calc = new Calculadora();
         calc.sumar(10,5);
