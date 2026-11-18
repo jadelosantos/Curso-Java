@@ -1,3 +1,5 @@
+package s028_ExcepcionesPersonalizadas;
+
 public class MainExcepcionPerso {
 
     public static void main(String[] args) {

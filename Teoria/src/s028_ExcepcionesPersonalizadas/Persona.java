@@ -1,3 +1,5 @@
+package s028_ExcepcionesPersonalizadas;
+
 public class Persona {
 
     private int edad;
