@@ -28,7 +28,7 @@ public class PedidosMain {
         });
         //Ejercicio 3 y 4
         pedidos.stream().filter(p -> p.getImporte() > 100).forEach(pedido -> {
-            pedido.setImporte(pedido.getImporte() * 0.15);
+            pedido.setImporte(pedido.getImporte() * 0.85);
             System.out.println("Pedido: " + num.incrementAndGet());
             System.out.println(pedido.toString());
         });
