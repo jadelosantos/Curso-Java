@@ -25,6 +25,7 @@
       <module fileurl="file://$PROJECT_DIR$/s022_POO_HerenciaAccesibilidad/s022_POO_HerenciaAccesibilidad.iml" filepath="$PROJECT_DIR$/s022_POO_HerenciaAccesibilidad/s022_POO_HerenciaAccesibilidad.iml" />
       <module fileurl="file://$PROJECT_DIR$/s024_TryCatchCheckedandUnchecked/s024_TryCatchCheckedandUnchecked.iml" filepath="$PROJECT_DIR$/s024_TryCatchCheckedandUnchecked/s024_TryCatchCheckedandUnchecked.iml" />
       <module fileurl="file://$PROJECT_DIR$/s027_funcionesStrings/s027_funcionesStrings.iml" filepath="$PROJECT_DIR$/s027_funcionesStrings/s027_funcionesStrings.iml" />
+      <module fileurl="file://$PROJECT_DIR$/s028_Pedidos/s028_Pedidos.iml" filepath="$PROJECT_DIR$/s028_Pedidos/s028_Pedidos.iml" />
     </modules>
   </component>
 </project>

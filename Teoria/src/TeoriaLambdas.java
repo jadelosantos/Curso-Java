@@ -31,6 +31,8 @@ public class TeoriaLambdas {
         alumnos.add("Laura");
 
         alumnos.stream().forEach(System.out::println);
+
+
     }
 }
     @FunctionalInterface interface Saludo{
