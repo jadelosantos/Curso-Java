@@ -14,10 +14,10 @@ public class Ejercicio1 {
             do {
                 System.out.println("Elige la operacion a realizar \n" +
                         "1.Leer\n" +
-                        "2.Insertar\n" +
-                        "3.Borrar\n" +
+                        "2.Consulta personalizada\n" +
+                        "3.Insertar\n" +
                         "4.Editar\n" +
-                        "5.Consulta personalizada");
+                        "5.Borrar");
                 int operacion = sc.nextInt();
                 switch (operacion){
                     case 1:
