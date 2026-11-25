@@ -8,8 +8,7 @@ public class Tienda {
     public Tienda() {
     }
 
-    public Tienda(String id_producto, String nombre, String categoria, String precio, String stock) {
-        this.id_producto = id_producto;
+    public Tienda(String nombre, String categoria, String precio, String stock) {
         this.nombre = nombre;
         this.categoria = categoria;
         this.precio = precio;
