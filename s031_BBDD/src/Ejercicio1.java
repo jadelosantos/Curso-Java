@@ -19,16 +19,18 @@ public class Ejercicio1 {
                         "4.Editar\n" +
                         "5.Borrar");
                 int operacion = sc.nextInt();
+                sc.nextLine();
                 switch (operacion){
                     case 1:
-                        leer(conexion);
                         System.out.println();
+                        leer(conexion);
                         break;
                     case 2:
-                        busquedaPersonalizada(conexion);
                         System.out.println();
+                        busquedaPersonalizada(conexion);
                         break;
                     case 3:
+                        System.out.println();
                         System.out.println("Introduce el titulo del libro:");
                         String titulo = sc.nextLine();
                         System.out.println("Introduce el autor del libro:");
@@ -37,9 +39,6 @@ public class Ejercicio1 {
                         String editorial = sc.nextLine();
                         System.out.println("Introduce el año del libro:");
                         int anioLibro = sc.nextInt();
-                        System.out.println("¿Esta disponible el libro? \n" +
-                                "1.Si \n" +
-                                "2.No \n");
                         int disponibilidad;
 
                         do {
@@ -54,6 +53,7 @@ public class Ejercicio1 {
                         boolean disponible = disponibilidad == 1;
                         Biblioteca libro = new Biblioteca(titulo,autor,editorial,String.valueOf(anioLibro),String.valueOf(disponible));
                         insertar(conexion,libro);
+                        break;
                     case 4:
                         System.out.println("Introduce el nuevo titulo del libro:");
                         String tituloNuevo = sc.nextLine();
@@ -63,9 +63,6 @@ public class Ejercicio1 {
                         String editorialNuevo = sc.nextLine();
                         System.out.println("Introduce el nuevo año del libro:");
                         int anioLibroNuevo = sc.nextInt();
-                        System.out.println("¿Esta disponible el libro ahora? \n" +
-                                "1.Si \n" +
-                                "2.No \n");
                         int disponibilidadNuevo;
 
                         do {
@@ -80,9 +77,10 @@ public class Ejercicio1 {
                         boolean disponibleNuevo = disponibilidadNuevo == 1;
                         Biblioteca libroNuevo = new Biblioteca(tituloNuevo,autorNuevo,editorialNuevo,String.valueOf(anioLibroNuevo),String.valueOf(disponibleNuevo));
                         editar(conexion,libroNuevo);
-                        System.out.println();
+                        break;
                     case 5:
                         borrar(conexion);
+                        break;
                     case 6:
                         endprogram = true;
                         break;
@@ -116,6 +114,7 @@ public class Ejercicio1 {
             if (!hayResultados) {
                 System.out.println("La tabla " + Biblioteca.class + " no contiene registros.");
             }
+            System.out.println();
         } catch (SQLException e) {
             System.err.println("Hubo un error al realizar la consulta: " + e.getMessage());
         }
@@ -128,7 +127,7 @@ public class Ejercicio1 {
     try (Statement sentencia = conexion.createStatement();
              ResultSet resultado = sentencia.executeQuery(consulta)) {
              ResultSetMetaData columnas = resultado.getMetaData();
-
+            System.out.println();
             while (resultado.next()) {
                 hayResultados = true;
                 for (int i = 1; i <= columnas.getColumnCount(); i++) {
@@ -143,6 +142,7 @@ public class Ejercicio1 {
             if (!hayResultados) {
                 System.out.println("La tabla " + Biblioteca.class + " no contiene registros.");
             }
+        System.out.println();
         } catch (SQLException e) {
             System.err.println("Hubo un error al realizar la consulta: " + e.getMessage());
         }
@@ -163,6 +163,7 @@ public class Ejercicio1 {
 
             sentencia.executeUpdate();
             System.out.println("Libro insertado correctamente.");
+            System.out.println();
         } catch (SQLException | NumberFormatException e) {
             System.err.println("No se pudo insertar el libro: " + e.getMessage());
         }
@@ -188,6 +189,7 @@ public class Ejercicio1 {
             sentencia.setInt(6,idEditar);
             sentencia.executeUpdate();
             System.out.println("Libro Actualizado correctamente.");
+            System.out.println();
         } catch (SQLException | NumberFormatException e) {
             System.err.println("No se pudo actualizar el libro: " + e.getMessage());
         }
@@ -195,7 +197,7 @@ public class Ejercicio1 {
 
     private static void borrar(Connection conexion) {
         leer(conexion);
-        System.out.println("Selecciona el numero del libro que quieres borrar");
+        System.out.println("Selecciona el titulo del libro que quieres borrar");
         String titulo = sc.nextLine();
         String sql = """
         DELETE FROM biblioteca WHERE titulo = ?
@@ -206,6 +208,7 @@ public class Ejercicio1 {
 
             int filasBorradas = sentencia.executeUpdate();
             System.out.println("Filas borradas: " + filasBorradas);
+            System.out.println();
         } catch (SQLException | NumberFormatException e) {
             System.err.println("No se pudo insertar el libro: " + e.getMessage());
         }
