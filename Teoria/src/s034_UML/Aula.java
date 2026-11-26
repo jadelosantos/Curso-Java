@@ -14,7 +14,7 @@ public class Aula {
     }
 
     public void actualizarCapacidad(int cap){
-        System.out.println(this.capacidad < cap ? this.capacidad = cap : "El aula ha alcanzado la maxima capacidad");
+        System.out.println(this.capacidad > cap ? this.capacidad = cap : "El aula ha alcanzado la maxima capacidad");
     }
 
 
