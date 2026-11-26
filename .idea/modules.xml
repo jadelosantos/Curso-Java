@@ -28,6 +28,7 @@
       <module fileurl="file://$PROJECT_DIR$/s028_Pedidos/s028_Pedidos.iml" filepath="$PROJECT_DIR$/s028_Pedidos/s028_Pedidos.iml" />
       <module fileurl="file://$PROJECT_DIR$/s030_JAVA_HILOS/s030_JAVA_HILOS.iml" filepath="$PROJECT_DIR$/s030_JAVA_HILOS/s030_JAVA_HILOS.iml" />
       <module fileurl="file://$PROJECT_DIR$/s031_BBDD/s031_BBDD.iml" filepath="$PROJECT_DIR$/s031_BBDD/s031_BBDD.iml" />
+      <module fileurl="file://$PROJECT_DIR$/s033_HashMapScanner/s033_HashMapScanner.iml" filepath="$PROJECT_DIR$/s033_HashMapScanner/s033_HashMapScanner.iml" />
     </modules>
   </component>
 </project>
